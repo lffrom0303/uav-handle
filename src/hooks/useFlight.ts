@@ -13,7 +13,7 @@ export const params = {
 export const useFlight = (cesiumViewer: RefObject<Cesium.Viewer | null>) => {
   const [uav, setUav] = useState<Cesium.Entity | null>(null);
 
-  const [animationFrameId, setAnimationFrameId] = useState<number | null>(null);
+  const [, setAnimationFrameId] = useState<number | null>(null);
   const [needsUpdate, setNeedsUpdate] = useState(false);
   const DIRECTION = {
     UP: "w",
@@ -23,7 +23,6 @@ export const useFlight = (cesiumViewer: RefObject<Cesium.Viewer | null>) => {
     SPEED_UP: "q",
     SPEED_DOWN: "e",
   };
-  console.log(animationFrameId);
   const keyboardMap = {
     [DIRECTION.UP]: false,
     [DIRECTION.DOWN]: false,
