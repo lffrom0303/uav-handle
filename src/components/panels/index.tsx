@@ -1,12 +1,12 @@
 import React, { useState, useCallback, useEffect } from "react";
 import {
   Title,
-  UavProfile,
-  PlayerProfile,
-  Params,
-  Gradienter,
-  Compass,
-  Altimeter,
+  // UavProfile,
+  // PlayerProfile,
+  // Params,
+  // Gradienter,
+  // Compass,
+  // Altimeter,
 } from "./components";
 
 const Panels: React.FC = () => {

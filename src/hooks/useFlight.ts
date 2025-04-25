@@ -23,6 +23,7 @@ export const useFlight = (cesiumViewer: RefObject<Cesium.Viewer | null>) => {
     SPEED_UP: "q",
     SPEED_DOWN: "e",
   };
+  console.log(animationFrameId);
   const keyboardMap = {
     [DIRECTION.UP]: false,
     [DIRECTION.DOWN]: false,
